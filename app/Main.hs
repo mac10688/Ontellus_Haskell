@@ -22,14 +22,4 @@ main = do
   putStrLn "\n\nNumbers"
   let numbers = sort $ filter (\case ParsedNumber _ -> True; otherwise -> False) $ parsedItems
   forM_ numbers print
-  -- putStrLn "Dates:"
-  -- forM_ parsedItems print
 
-
-  -- let dates = 
-  -- case parsedItems of
-    -- Just xs -> foldl 
-
-filterDates :: ParseResult -> Bool
-filterDates (ParsedDate date) = True
-filterDates _ = False
