@@ -28,6 +28,7 @@ dependencies:
 - time
 - regex-tdfa
 - raw-strings-qq
+- unique
 
 library:
   source-dirs: src
@@ -43,6 +44,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - ontellus
+    - unique
 
 tests:
   ontellus-test:
